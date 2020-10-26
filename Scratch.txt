@@ -1,0 +1,13 @@
+myText = new FlxText(0, 0, 500);
+myText.text = "Hello World";
+myText.setFormat("assets/font.ttf", 20, FlxColor.WHITE, CENTER);
+myText.setBorderStyle(OUTLINE, FlxColor.RED, 1);
+
+
+eSprite.loadGraphic("assets/images/ESprite.png", true, 32, 32);
+eSprite.x = 320;
+eSprite.y = 240;
+eSprite.animation.add("walk-dwn", [1, 0, 1, 2], 5, true);
+eSprite.animation.add("walk-left", [4, 3, 4, 5], 5, true);
+eSprite.animation.add("walk-right", [7, 6, 7, 8], 5, true);
+eSprite.animation.add("walk-up", [10, 9, 10, 11], 5, true);
